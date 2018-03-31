@@ -1,0 +1,12 @@
+<div *ngIf="lat && lng" >
+<agm-map [latitude]="lat" [longitude]="lng" [zoom]="10">
+    <agm-marker [latitude]="lat" [longitude]="lng"
+      [iconUrl]="'https://maps.google.com/mapfiles/kml/shapes/parking_lot_maps.png'"
+      [opacity]=1>
+        <agm-info-window>
+          <h3>Current location</h3>
+          <p>You are here</p>
+        </agm-info-window>
+    </agm-marker>
+</agm-map>
+</div>
